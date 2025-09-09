@@ -1,14 +1,14 @@
 #Netlify 빌드 및 배포 설정
+'command' 라인을 제거하여 불필요한 빌드 과정을 생략합니다.
 [build]
-publish = "public"
-functions = "netlify/functions"
-command = "npm run build"
+publish = "public" # 배포할 폴더는 'public' 입니다.
+functions = "netlify/functions" # 서버리스 함수 폴더 경로입니다.
 
-#빌드 환경 설정
+#빌드 환경 설정 (Node.js 버전 지정)
 [build.environment]
 NODE_VERSION = "18"
 
-#개별 함수 설정 (오류 수정 완료)
+#개별 함수 설정
 [functions.analyze-html]
 runtime = "nodejs18.x"
 timeout = 9
