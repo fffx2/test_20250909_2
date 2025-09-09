@@ -1,0 +1,23 @@
+{
+  "name": "accessibility-design-assistant",
+  "version": "1.0.0",
+  "description": "HTML 접근성 분석 및 AI 디자인 어시스턴트",
+  "main": "index.js",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "node build.js",
+    "deploy": "netlify deploy --prod"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "tinycolor2": "^1.6.0",
+    "openai": "^3.3.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@netlify/functions": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
